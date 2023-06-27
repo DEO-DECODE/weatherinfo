@@ -18,7 +18,6 @@ const Temp = () => {
       const { name } = data;
       const { speed } = data.wind;
       const { country, sunset } = data.sys;
-
       const myNewWeatherInfo = {
         temp,
         humidity,
@@ -57,7 +56,8 @@ const Temp = () => {
           <button
             className="searchButton"
             type="button"
-            onClick={getWeatherInfo}>
+            onClick={getWeatherInfo}
+          >
             Search
           </button>
         </div>
